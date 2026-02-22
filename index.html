@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Bithi</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+
+</head>
+
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Bithi.</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="index.html" class="home-link">Bithi.</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#education" class="smoothscroll">Education</a></li>
+                        <li><a href="#skills-section" class="smoothscroll">Skill</a></li>
+                        <li><a href="#works" class="smoothscroll">Work</a></li>
+                        <li><a href="#achievements" class="smoothscroll">Achievement</a></li>
+                        <li><a href="#contact" class="smoothscroll">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+<!-- ======================= INTRO SECTION ======================= -->
+<section id="intro" class="s-intro target-section" style="padding: 60px 20px; background: linear-gradient(135deg, #0a192f, #112240); color: #e0e7ff; font-family: 'Poppins', sans-serif;">
+
+  <div class="row intro-content" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; max-width: 1100px; margin: 0 auto; gap: 50px;">
+
+    <!-- Intro Text -->
+    <div class="column intro-text" style="flex: 1 1 500px;">
+      <div style="color: #64ffda; font-size: 18px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">
+        Hello, I'm
+      </div>
+      <h1 style="font-size: 42px; font-weight: 800; margin: 0 0 10px; color: #e6f1ff;">
+        Most Umme Habiba Bithi
+      </h1>
+      <h2 style="font-size: 20px; font-weight: 500; margin-bottom: 20px; color: #a8b2d1;">
+        A Student Who Loves Crafting and Painting
+      </h2>
+
+      <a href="#about" class="smoothscroll" style="display: inline-block; margin-top: 30px; padding: 12px 28px; background: #64ffda; color: #0a192f; font-weight: 600; border-radius: 6px; text-decoration: none; transition: background 0.3s;">
+        Learn More About Me
+      </a>
+    </div>
+
+    <!-- Profile Image (Perfect Circle) -->
+    <div class="column intro-image-wrapper" style="flex: 1 1 300px; text-align: center;">
+      <div style="
+        width: 280px;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #64ffda;
+        box-shadow: 0 12px 25px rgba(100, 255, 218, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      ">
+        <img src="MyImages/mine.jpg" alt="Bithi" style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        " />
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+  .s-intro {
+    position: relative;
+    /* min-height: 100vh; */ /* removed to reduce depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #081627 0%, #152a46 100%);
+    overflow: hidden;
+    color: #e0e7ff;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px 20px; /* reduced padding */
+  }
+
+  .s-intro::before {
+    content: "";
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, #4bc0c0, transparent 70%);
+    filter: blur(100px);
+    opacity: 0.4;
+    z-index: 0;
+  }
+
+  .row.intro-content {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeSlideUp 1.2s forwards;
+  }
+
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .intro-text {
+    flex: 1 1 350px;
+    max-width: 450px;
+    text-align: left;
+  }
+
+  .text-pretitle.with-line {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4bc0c0;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-pretitle.with-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #4bc0c0;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: underlineGrow 1s ease forwards 0.7s;
+    border-radius: 2px;
+  }
+
+  @keyframes underlineGrow {
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .text-huge-title {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #e0e7ff;
+    margin: 0;
+  }
+
+  .intro-image-wrapper {
+    flex: 1 1 300px;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .intro-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #4bc0c0;
+    box-shadow: 0 0 25px 5px #4bc0c0;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .intro-image-wrapper:hover .intro-image {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px 10px #31a9a9;
+  }
+
+  .intro-scrolldown {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    fill: #4bc0c0;
+    animation: floatUpDown 3s ease-in-out infinite;
+    z-index: 2;
+  }
+
+  .intro-scrolldown:hover {
+    fill: #31a9a9;
+  }
+
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-15px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .row.intro-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .intro-text {
+      max-width: 100%;
+    }
+
+    .text-huge-title {
+      font-size: 2.5rem;
+    }
+
+    .intro-image {
+      width: 250px;
+      height: 250px;
+      border-width: 4px;
+      box-shadow: 0 0 20px 4px #4bc0c0;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .text-huge-title {
+      font-size: 2rem;
+    }
+
+    .intro-image {
+      width: 200px;
+      height: 200px;
+    }
+  }
+</style>
+
+    
+          <!-- ======================= ABOUT ME SECTION ======================= -->
+<section id="about" class="s-about target-section" style="padding: 100px 20px; background-color: #112240; color: #e0e7ff; font-family: 'Poppins', sans-serif;">
+
+  <div class="row" style="max-width: 1000px; margin: 0 auto;">
+    
+    <!-- Section Title -->
+    <div style="text-align: center; margin-bottom: 40px;">
+      <h2 style="font-size: 32px; font-weight: 700; color: #64ffda;">About Me</h2>
+    </div>
+
+    <!-- Description -->
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <p style="font-size: 18px; color: #ccd6f6; line-height: 1.7;">
+        Hello! I’m <strong>Most Umme Habiba Bithi</strong> — a student who finds joy in creativity and simple things in life. I have a deep love for <strong>crafting</strong>, where I bring small ideas to life using paper, colors, and handwork.
+      </p>
+
+      <p style="margin-top: 20px; font-size: 16px; color: #8892b0; line-height: 1.7;">
+        Alongside crafting, I enjoy <strong>cooking</strong> delicious meals, exploring my imagination through <strong>painting</strong>, and capturing quiet moments with <strong>photography</strong>. These hobbies give me peace and allow me to express myself in many different ways.
+      </p>
+
+      <p style="margin-top: 20px; font-size: 16px; color: #8892b0; line-height: 1.7;">
+        My world is filled with colors, textures, flavors, and feelings — and I love creating little things that bring warmth and beauty to everyday life.
+      </p>
+    </div>
+
+    <!-- Personal Info -->
+    <div style="margin-top: 60px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; color: #ccd6f6;">
+      
+      <div style="flex: 1 1 250px;">
+        <h3 style="font-size: 20px; color: #64ffda; margin-bottom: 15px;">Personal Information</h3>
+        <ul style="list-style: none; padding: 0; line-height: 1.8; font-size: 16px;">
+          <li><strong>Name:</strong> Most Umme Habiba Bithi</li>
+          <li><strong>Date of Birth:</strong> April 09, 2003</li>
+          <li><strong>adress:</strong> Dhaka,Bangladesh</li>
+          <li><strong>Hobby:</strong> Crafting, Cooking, Painting</li>
+          <li><strong>Language:</strong> Bangla, English</li>
+          <li><strong>Nationality:</strong> Bangladeshi</li>
+        </ul>
+      </div>
+
+      <!-- <div style="flex: 1 1 250px;">
+        <h3 style="font-size: 20px; color: #64ffda; margin-bottom: 15px;">Creative Interests</h3>
+        <ul style="list-style: none; padding: 0; line-height: 1.8; font-size: 16px;">
+          <li>Handmade Crafts</li>
+          <li>Scrapbooking</li>
+          <li>Home Decor DIY</li>
+          <li>Cooking & Food Styling</li>
+          <li>Watercolor & Acrylic Painting</li>
+          <li>Mobile Photography</li>
+        </ul>
+      </div> -->
+
+    </div>
+  </div>
+
+</section>
+
+                        </div>
+                    </div>
+                </div> <!-- about-info -->
+
+
+                <!-- <div class="row about-expertise" data-animate-block> -->
+                    <!-- <div class="column lg-12"> -->
+
+                        <!-- <h2 class="text-pretitle" data-animate-el>My Hobby</h2> -->
+
+                        <!-- <ul class="skills-list h1" data-animate-el> -->
+                            <!-- <li>Cooking and Food Presentation</li> -->
+                            <!-- <li>Painting and Drawing</li> -->
+                            <!-- <li>Crafting</li> -->
+                            <!-- <li>Gardening With Design</li> -->
+                            <!-- <li>Prototyping</li> -->
+                            <!-- <li>Illustration</li> -->
+                        <!-- </ul> -->
+
+                       
+
+                  <!-- ========================================= -->
+<!--                EDUCATION                  -->
+<!-- ========================================= -->
+<section id="education" class="s-education target-section" style="padding: 60px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #FFFFFF;">
+  <div class="row education-content" style="max-width: 900px; margin: auto;">
+
+    <div class="column education-header" style="text-align: center; margin-bottom: 50px;">
+      <h2 class="section-title" style="font-size: 36px; font-weight: 700; color: #1B263B; margin-bottom: 8px; text-transform: uppercase;">
+        Education
+      </h2>
+      <p class="section-subtitle" style="font-size: 18px; color: #5D6D7E;">
+        My academic background
+      </p>
+    </div>
+
+    <div class="education-timeline" style="position: relative; padding-left: 30px; border-left: 3px solid #2980B9;">
+
+      <!-- Education Item 1 -->
+      <div class="education-item" style="position: relative; margin-bottom: 40px;">
+        <div class="education-marker" style="position: absolute; left: -13px; top: 5px; width: 18px; height: 18px; background: #2980B9; border-radius: 50%; border: 3px solid #FFFFFF; box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);"></div>
+        <div class="education-info">
+          <h3 style="font-size: 22px; font-weight: 600; color: #34495E; margin-bottom: 6px;">
+            B.sc in Computer Science and Engineering (Ongoing)
+          </h3>
+          <p class="education-institute" style="font-size: 16px; color: #6C7A89; margin-bottom: 4px;">
+            University of Asia Pacific
+          </p>
+          <span class="education-year" style="font-size: 14px; color: #95A5A6;">
+            2023 - Present
+          </span>
+        </div>
+      </div>
+
+      <!-- Education Item 2 -->
+      <div class="education-item" style="position: relative; margin-bottom: 40px;">
+        <div class="education-marker" style="position: absolute; left: -13px; top: 5px; width: 18px; height: 18px; background: #2980B9; border-radius: 50%; border: 3px solid #FFFFFF; box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);"></div>
+        <div class="education-info">
+          <h3 style="font-size: 22px; font-weight: 600; color: #34495E; margin-bottom: 6px;">
+            Higher Secondary Certificate (HSC)
+          </h3>
+          <p class="education-institute" style="font-size: 16px; color: #6C7A89; margin-bottom: 4px;">
+            Govt. Debendra College, Manikgonj
+          </p>
+          <span class="education-year" style="font-size: 14px; color: #95A5A6;">
+            2019 - 2021
+          </span>
+        </div>
+      </div>
+
+      <!-- Education Item 3 -->
+      <div class="education-item" style="position: relative; margin-bottom: 40px;">
+        <div class="education-marker" style="position: absolute; left: -13px; top: 5px; width: 18px; height: 18px; background: #2980B9; border-radius: 50%; border: 3px solid #FFFFFF; box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);"></div>
+        <div class="education-info">
+          <h3 style="font-size: 22px; font-weight: 600; color: #34495E; margin-bottom: 6px;">
+            Secondary School Certificate (SSC)
+          </h3>
+          <p class="education-institute" style="font-size: 16px; color: #6C7A89; margin-bottom: 4px;">
+            S.K. Govt. Girls’ High School, Manikgonj
+          </p>
+          <span class="education-year" style="font-size: 14px; color: #95A5A6;">
+            2017 - 2019
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Skills Subtitle -->
+<!-- <div class="row about-expertise" data-animate-block style="max-width: 900px; margin: 50px auto 0; padding: 0 20px;">
+  <div class="column lg-12" style="text-align: center;">
+    <h2 class="text-pretitle" data-animate-el style="font-size: 28px; font-weight: 600; color: #2980B9; text-transform: uppercase; letter-spacing: 2px;">
+      Skills
+    </h2>
+  </div>
+</div> -->
+
+
+
+<section id="skills-section" style="padding: 60px 20px; font-family: 'Segoe UI', sans-serif; background: #fefefe;">
+  <h2 style="text-align: center; font-size: 32px; color: #222; margin-bottom: 40px;">My Skills</h2>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1100px; margin: auto;">
+
+    <!-- Creative Skills -->
+    <div style="flex: 1; min-width: 300px; background: #ffffff; border-radius: 20px; padding: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.06);">
+      <h3 style="text-align: center; font-size: 24px; color: #444; margin-bottom: 25px;">Creative Skills</h3>
+
+      <div class="skill"><p>Crafting <span class="percent">0%</span></p>
+        <div class="bar"><div class="fill" data-percentage="70" style="background: #ec6f66;"></div></div>
+      </div>
+
+      <div class="skill"><p>Cooking <span class="percent">0%</span></p>
+        <div class="bar"><div class="fill" data-percentage="80" style="background: #f9a825;"></div></div>
+      </div>
+
+      <div class="skill"><p>Painting <span class="percent">0%</span></p>
+        <div class="bar"><div class="fill" data-percentage="75" style="background: #8e44ad;"></div></div>
+      </div>
+
+      <div class="skill"><p>Photography <span class="percent">0%</span></p>
+        <div class="bar"><div class="fill" data-percentage="50" style="background: #26a69a;"></div></div>
+      </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div style="flex: 1; min-width: 300px; background: #ffffff; border-radius: 20px; padding: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.06);">
+      <h3 style="text-align: center; font-size: 24px; color: #444; margin-bottom: 25px;">Programing Language Skills</h3>
+
+      <div class="skill"><p>C <span class="percent">0%</span></p>
+        <div class="bar"><div class="fill" data-percentage="75" style="background: #3498db;"></div></div>
+      </div>
+
+      <div class="skill"><p>C++ <span class="percent">0%</span></p>
+        <div class="bar"><div class="fill" data-percentage="70" style="background: #1abc9c;"></div></div>
+      </div>
+
+      <div class="skill"><p>Python <span class="percent">0%</span></p>
+        <div class="bar"><div class="fill" data-percentage="50" style="background: #f39c12;"></div></div>
+      </div>
+
+      <div class="skill"><p>Java <span class="percent">0%</span></p>
+        <div class="bar"><div class="fill" data-percentage="60" style="background: #e67e22;"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #skills-section .skill {
+    margin-bottom: 20px;
+  }
+
+  #skills-section .skill p {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #skills-section .bar {
+    background: #f0f0f0;
+    border-radius: 20px;
+    height: 12px;
+    overflow: hidden;
+  }
+
+  #skills-section .fill {
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    transition: width 1.2s ease-in-out;
+  }
+
+  @media screen and (max-width: 768px) {
+    #skills-section h2 {
+      font-size: 28px;
+    }
+
+    #skills-section h3 {
+      font-size: 20px;
+    }
+  }
+</style>
+
+<script>
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+
+  function animateSkillBars() {
+    const section = document.getElementById('skills-section');
+    if (!section.classList.contains('animated') && isInViewport(section)) {
+      section.classList.add('animated');
+      const fills = section.querySelectorAll('.fill');
+      const percents = section.querySelectorAll('.percent');
+
+      fills.forEach((bar, i) => {
+        const percent = parseInt(bar.dataset.percentage);
+        let current = 0;
+
+        const interval = setInterval(() => {
+          if (current >= percent) {
+            clearInterval(interval);
+          } else {
+            current++;
+            bar.style.width = current + '%';
+            percents[i].textContent = current + '%';
+          }
+        }, 15);
+      });
+    }
+  }
+
+  window.addEventListener('scroll', animateSkillBars);
+  window.addEventListener('load', animateSkillBars);
+</script>
+
+
+
+            
+
+<section id="achievements" class="s-achievements target-section">
+  <div class="row section-header has-bottom-sep wide" data-animate-block>
+    <div class="column lg-12" style="text-align: center;">
+      <h3 class="text-pretitle" data-animate-el style="color: #4bc0c0; font-size: 18px; font-weight: 600; letter-spacing: 2px; margin-bottom: 8px;">
+        Achievements
+      </h3>
+      <h1 class="text-display-title" data-animate-el style="color: #e0e7ff; font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 12px;">
+        My Awards & Achievements
+      </h1>
+    </div>
+  </div>
+
+  <div class="achievements-container">
+    <div class="achievement-item">
+      <img src="MyImages/math.jpg" alt="Math Olympiad">
+      <p class="image-caption" style="font-size: 15px; line-height: 1.4;">Intra University Math Olympiad 4.0</p>
+    </div>
+
+    <div class="achievement-item">
+      <img src="MyImages/dean.jpg" alt="Dean Award">
+      <p class="image-caption" style="font-size: 15px; line-height: 1.4;">Dean's Honor Award - UAP</p>
+    </div>
+
+    <div class="achievement-item">
+      <img src="MyImages/volunteer.jpg" alt="Volunteer Certificate - TechFest">
+      <p class="image-caption" style="font-size: 15px; line-height: 1.4;">Volunteer Certificate - TechFest</p>
+    </div>
+
+    <div class="achievement-item">
+      <img src="MyImages/deancer.jpg" alt="Certificate">
+      <p class="image-caption" style="font-size: 15px; line-height: 1.4;">Dean's Certificate</p>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Achievements Section */
+.s-achievements {
+  background: linear-gradient(135deg, #081627 0%, #152a46 100%);
+  padding: 80px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.achievement-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.achievement-item img {
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(75, 192, 192, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.achievement-item:hover {
+  transform: translateY(-8px);
+}
+
+.achievement-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(75, 192, 192, 0.5);
+}
+
+.image-caption {
+  margin-top: 15px;
+  color: #cbd5e1;
+  font-weight: 500;
+  max-width: 320px;
+}
+</style>
+
+
+
+ <!-- ### works
+            ================================================== -->
+ <section id="works" class="s-works target-section" style="padding: 60px 20px; max-width: 1100px; margin: auto; font-family: 'Segoe UI', sans-serif; background: #F8FAFC;">
+
+  <div class="row works-portfolio">
+    <div class="column lg-12">
+
+      <!-- Heading -->
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h2 style="font-size: 30px; font-weight: 700; color: #0F172A; margin-bottom: 8px;">Recent Works</h2>
+        <p style="font-size: 15px; color: #64748B; line-height: 1.6;">
+          A curated collection of my latest creations in craft, art, and more.
+        </p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div id="work-filter" role="toolbar" aria-label="Filter works">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="craft">Craft</button>
+          <button class="filter-btn" data-filter="painting">Painting</button>
+          <button class="filter-btn" data-filter="photography">Photography</button>
+          <button class="filter-btn" data-filter="cooking">Cooking</button>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <ul class="folio-list">
+        <li class="folio-list__item" data-category="photography"><img src="MyImages/photography.jpg" alt="Photography"></li>
+        <li class="folio-list__item" data-category="craft"><img src="MyImages/craft.jpg" alt="Craft"></li>
+        <li class="folio-list__item" data-category="painting"><img src="MyImages/painting1.jpg" alt="Painting"></li>
+        <li class="folio-list__item" data-category="painting"><img src="MyImages/painting2.jpg" alt="Painting"></li>
+        <li class="folio-list__item" data-category="painting"><img src="MyImages/painting3.jpg" alt="Painting"></li>
+        <li class="folio-list__item" data-category="cooking"><img src="MyImages/cooking1.jpg" alt="Cooking"></li>
+        <li class="folio-list__item" data-category="cooking"><img src="MyImages/cooking2.jpg" alt="Cooking"></li>
+        <li class="folio-list__item" data-category="craft"><img src="MyImages/craft2.jpg" alt="Craft"></li>
+        <li class="folio-list__item" data-category="painting"><img src="MyImages/painting4.jpg" alt="Painting"></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <style>
+    /* Filter Bar Container */
+    #work-filter {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      background: #E2E8F0;
+      border-radius: 30px;
+      padding: 8px 12px;
+      margin-bottom: 25px;
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: nowrap; /* Prevent wrapping */
+      white-space: nowrap; /* Prevent text wrapping */
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .filter-btn {
+      background-color: transparent;
+      color: #0F172A;
+      padding: 8px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 2px solid transparent;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+      white-space: nowrap;
+      user-select: none;
+      flex-shrink: 0; /* Prevent shrinking to keep visible */
+    }
+
+    .filter-btn:hover {
+      background-color: #CBD5E1;
+      color: #1E40AF;
+    }
+
+    .filter-btn.active {
+      background-color: #1E40AF;
+      color: #FFFFFF;
+      border-color: #1E40AF;
+    }
+
+    /* Optional: Hide scrollbar but keep scroll */
+    #work-filter::-webkit-scrollbar {
+      height: 6px;
+    }
+    #work-filter::-webkit-scrollbar-thumb {
+      background: rgba(30, 64, 175, 0.4);
+      border-radius: 3px;
+    }
+    #work-filter::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Portfolio Grid */
+    .folio-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .folio-list__item {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .folio-list__item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .folio-list__item img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 1024px) {
+      .folio-list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .folio-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .folio-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll('#work-filter .filter-btn');
+      const items = document.querySelectorAll('.folio-list__item');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          filterButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+          });
+
+          button.classList.add('active');
+          button.setAttribute('aria-pressed', 'true');
+
+          const filter = button.getAttribute('data-filter');
+
+          items.forEach(item => {
+            item.style.display =
+              filter === 'all' || item.getAttribute('data-category') === filter
+                ? 'block'
+                : 'none';
+          });
+        });
+      });
+    });
+  </script>
+</section>
+
+    
+
+
+    </section> <!-- end s-works -->
+
+
+    <!-- ### contact
+            ================================================== -->
+    <section id="contact" class="s-contact target-section" style="background-color: #F9FAFB; padding: 60px 20px; font-family: 'Segoe UI', sans-serif;">
+
+  <!-- Top Section -->
+  <div class="row contact-top" style="text-align: center; margin-bottom: 40px;">
+    <div class="column lg-12">
+      <h2 style="color: #1E293B; font-size: 26px; font-weight: 700; margin-bottom: 12px;">
+        Get In Touch
+      </h2>
+      <p style="color: #475569; font-size: 16px; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+        I love to hear from you. Whether you have a question or just want to chat about craft & art — shoot me a message.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="row contact-bottom" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+
+    <!-- Email/Phone -->
+    <div class="column contact-block" style="flex: 1 1 250px; text-align: center;">
+      <h3 style="color: #334155; font-size: 14px; font-weight: 600; margin-bottom: 10px;">Reach me at</h3>
+      <p style="font-size: 14px; color: #64748B;">
+        <a href="mailto:23101043@uap-bd.edu" style="color: #3B82F6; text-decoration: none;">23101043@uap-bd.edu</a><br>
+        <a href="tel:+8801766228366" style="color: #3B82F6; text-decoration: none;">+880 1404131670</a>
+      </p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="column contact-block" style="flex: 1 1 250px; text-align: center;">
+      <h3 style="color: #334155; font-size: 14px; font-weight: 600; margin-bottom: 10px;">Social</h3>
+      <ul style="list-style: none; padding: 0; font-size: 14px; color: #64748B;">
+        <li style="margin-bottom: 8px;"><a href="" style="color: #3B82F6; text-decoration: none;">Facebook</a></li>
+        <li><a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=lx95ud7" style="color: #3B82F6; text-decoration: none;">Instagram</a></li>
+      </ul>
+    </div>
+
+    <!-- Say Hello Button -->
+    <div class="column contact-block" style="flex: 1 1 250px; text-align: center;">
+      <a href="mailto:23101043@uap-bd.edu" style="display: inline-block; padding: 10px 24px; background-color: #3B82F6; color: white; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; transition: background 0.3s;">
+        Say Hello.
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+    </main> <!-- end s-content -->
+
+
+    <!-- ## footer
+        ================================================== -->
+    <!-- <footer class="s-footer"> -->
+
+    <!-- <div class="row"> -->
+    <!-- <div class="column ss-copyright"> -->
+    <!-- <span>© Copyright Luther 2021</span>  -->
+    <!-- <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> Distribution By <a href="https://themewagon.com">Themewagon</a></span> -->
+    <!-- </div> -->
+
+    <!-- <div class="ss-go-top"> -->
+    <!-- <a class="smoothscroll" title="Back to Top" href="#top"> -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg> -->
+    <!-- </a> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- </footer> end s-footer -->
+
+    <!-- </div> end -s-pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
